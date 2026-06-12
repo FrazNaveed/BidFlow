@@ -3,25 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --brand: 79 70 229;
+  --brand-light: 238 242 255;
+  --surface: 249 250 251;
+  --ink: 17 24 39;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply antialiased text-slate-900;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-brand {
+    color: rgb(var(--brand));
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent;
+  }
+
+  .hero-surface {
+    background-color: #f8f9fc;
+    background-image:
+      radial-gradient(ellipse 90% 70% at 50% -20%, rgba(129, 140, 248, 0.22), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 10%, rgba(167, 139, 250, 0.12), transparent),
+      radial-gradient(ellipse 50% 30% at 10% 20%, rgba(99, 102, 241, 0.08), transparent);
   }
 }

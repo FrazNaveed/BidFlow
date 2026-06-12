@@ -1,0 +1,18 @@
+TENDER NOTICE — National Distribution Services
+Tender ID: TND-2026-LOG-0112
+Closing Date: June 1, 2026
+Contract Value: $1,800,000 annually
+
+EVALUATION CRITERIA:
+Operational Capability — 35%
+SLA Performance — 25%
+Technology Platform — 20%
+Pricing — 20%
+
+REQUIREMENTS:
+1. Demonstrate nationwide distribution network with minimum 50 hub locations.
+2. Provide real-time shipment tracking and TMS integration capabilities.
+3. On-time delivery SLA of 98% or higher.
+4. ISO 9001 certification required.
+5. Submit carbon footprint reduction plan.
+6. Pricing breakdown by zone and service tier.

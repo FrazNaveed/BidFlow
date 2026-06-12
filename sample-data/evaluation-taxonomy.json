@@ -1,0 +1,92 @@
+[
+  {
+    "sector": "IT Services",
+    "criterion": "Technical Approach",
+    "typical_weight": "30-40%",
+    "description": "Solution architecture, methodology, innovation"
+  },
+  {
+    "sector": "IT Services",
+    "criterion": "Security & Compliance",
+    "typical_weight": "20-30%",
+    "description": "SOC 2, ISO 27001, data protection controls"
+  },
+  {
+    "sector": "IT Services",
+    "criterion": "Past Performance",
+    "typical_weight": "15-25%",
+    "description": "Relevant project references and outcomes"
+  },
+  {
+    "sector": "IT Services",
+    "criterion": "Price",
+    "typical_weight": "10-20%",
+    "description": "Total cost of ownership and value"
+  },
+  {
+    "sector": "IT Services",
+    "criterion": "Team Qualifications",
+    "typical_weight": "10-15%",
+    "description": "Key personnel experience and certifications"
+  },
+  {
+    "sector": "Construction",
+    "criterion": "Technical Methodology",
+    "typical_weight": "25-35%",
+    "description": "Construction approach and safety plan"
+  },
+  {
+    "sector": "Construction",
+    "criterion": "Safety Record",
+    "typical_weight": "20-25%",
+    "description": "EMR, OSHA compliance, incident history"
+  },
+  {
+    "sector": "Construction",
+    "criterion": "Schedule",
+    "typical_weight": "15-20%",
+    "description": "Timeline feasibility and milestones"
+  },
+  {
+    "sector": "Construction",
+    "criterion": "Cost",
+    "typical_weight": "20-30%",
+    "description": "Bid price competitiveness"
+  },
+  {
+    "sector": "Construction",
+    "criterion": "Experience",
+    "typical_weight": "10-15%",
+    "description": "Similar project completion record"
+  },
+  {
+    "sector": "Logistics",
+    "criterion": "Operational Capability",
+    "typical_weight": "30-40%",
+    "description": "Fleet, warehousing, distribution network"
+  },
+  {
+    "sector": "Logistics",
+    "criterion": "SLA Performance",
+    "typical_weight": "20-25%",
+    "description": "On-time delivery, accuracy metrics"
+  },
+  {
+    "sector": "Logistics",
+    "criterion": "Technology Platform",
+    "typical_weight": "15-20%",
+    "description": "TMS/WMS, tracking, integration"
+  },
+  {
+    "sector": "Logistics",
+    "criterion": "Pricing",
+    "typical_weight": "15-25%",
+    "description": "Rate competitiveness and transparency"
+  },
+  {
+    "sector": "Logistics",
+    "criterion": "Sustainability",
+    "typical_weight": "5-10%",
+    "description": "Carbon footprint, green logistics"
+  }
+]

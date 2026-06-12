@@ -1,0 +1,24 @@
+REQUEST FOR PROPOSAL — IT Managed Services
+Agency: Department of Digital Transformation
+RFP No: RFP-2026-IT-0089
+
+SUBMISSION DEADLINE: April 30, 2026
+Budget Ceiling: $2,500,000
+
+EVALUATION CRITERIA:
+Technical Approach — 35%
+Security & Compliance — 25%
+Past Performance — 20%
+Price — 20%
+
+SECTION A — TECHNICAL QUESTIONS
+1. Describe your cloud infrastructure management approach including monitoring and patching.
+2. The vendor shall maintain SOC 2 Type II certification.
+3. Provide SLA commitments for uptime (minimum 99.9%).
+
+SECTION B — COMPLIANCE
+4. Confirm GDPR and CCPA compliance for data processing.
+5. Describe incident response procedures and breach notification timelines.
+
+SECTION C — EXPERIENCE
+6. Provide three references for government IT projects over $500K completed in the last 3 years.

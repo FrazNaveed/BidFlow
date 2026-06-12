@@ -1,0 +1,38 @@
+REQUEST FOR PROPOSAL
+Cloud Security Platform — Enterprise License
+Issued by: State Department of Technology
+RFP Number: RFP-2026-CS-0042
+
+SUBMISSION DEADLINE: March 15, 2026
+Questions due: February 28, 2026
+
+BUDGET CEILING: $500,000 (not to exceed)
+Contract term: 3 years with two 1-year renewal options
+
+EVALUATION CRITERIA:
+Technical Approach — 40%
+Security & Compliance — 30%
+Past Performance — 20%
+Price — 10%
+
+MANDATORY REQUIREMENTS:
+
+1. The vendor shall demonstrate SOC 2 Type II compliance with an audit report no older than 12 months.
+
+2. Describe your data encryption approach for data at rest and in transit. All data must be encrypted using industry-standard algorithms.
+
+3. The solution must support SAML 2.0 or OIDC single sign-on integration with Azure AD and Okta.
+
+4. Vendor must maintain 99.9% uptime SLA for production services with documented incident response procedures.
+
+5. Provide your incident response plan including notification timelines for data breaches affecting customer data.
+
+6. Confirm GDPR compliance for any processing of EU citizen data.
+
+7. Describe your disaster recovery and business continuity capabilities including RPO and RTO targets.
+
+8. List all sub-processors and their security certifications.
+
+9. Provide three references from government or enterprise clients in the last 3 years.
+
+10. Submit pricing broken down by year for the 3-year base period.

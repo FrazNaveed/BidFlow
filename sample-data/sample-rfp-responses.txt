@@ -1,0 +1,18 @@
+ACME Corp — Past RFP Responses
+
+SECURITY & COMPLIANCE
+
+Q: Do you comply with SOC 2 Type II?
+A: Yes. ACME Corp maintains SOC 2 Type II certification, audited annually by a qualified third-party assessor. Our most recent audit report (covering the period January 1 – December 31, 2025) found no exceptions. We can provide the report under NDA upon request. Our controls cover security, availability, and confidentiality trust service criteria.
+
+Q: How do you handle data encryption?
+A: All data is encrypted at rest using AES-256 and in transit using TLS 1.3. Customer data is stored in SOC 2 certified data centers located in the United States. Encryption keys are managed via AWS KMS with automatic rotation every 90 days.
+
+Q: What is your incident response process?
+A: We maintain a documented incident response plan reviewed quarterly. Critical incidents are escalated within 15 minutes. Customers are notified within 24 hours of confirmed data breaches affecting their data, in compliance with applicable regulations.
+
+Q: Do you support single sign-on (SSO)?
+A: Yes. We support SAML 2.0 and OIDC-based SSO integration with major identity providers including Okta, Azure AD, and Google Workspace. SSO is available on our Enterprise plan.
+
+Q: What is your uptime SLA?
+A: We guarantee 99.9% uptime for our production services, measured monthly. Scheduled maintenance windows are communicated at least 72 hours in advance and occur outside business hours (11 PM – 3 AM ET).

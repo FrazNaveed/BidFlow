@@ -1,0 +1,502 @@
+[
+  {
+    "project_name": "Project 001 — Construction",
+    "summary": "Enterprise security platform deployment for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 11%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2020,
+    "contract_value": 187000,
+    "duration_months": 7,
+    "client_type": "Enterprise",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 002 — Logistics",
+    "summary": "Data analytics and BI modernization for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 12%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2021,
+    "contract_value": 224000,
+    "duration_months": 8,
+    "client_type": "Healthcare",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 003 — IT",
+    "summary": "SSO and identity management implementation for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 13%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2022,
+    "contract_value": 261000,
+    "duration_months": 9,
+    "client_type": "Financial Services",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 004 — Construction",
+    "summary": "Disaster recovery and BCP setup for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 14%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2023,
+    "contract_value": 298000,
+    "duration_months": 10,
+    "client_type": "Education",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 005 — Logistics",
+    "summary": "Custom software development for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 15%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2024,
+    "contract_value": 335000,
+    "duration_months": 11,
+    "client_type": "Government",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 006 — IT",
+    "summary": "Network infrastructure upgrade for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 16%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2019,
+    "contract_value": 372000,
+    "duration_months": 12,
+    "client_type": "Enterprise",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 007 — Construction",
+    "summary": "Compliance audit and remediation for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 17%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2020,
+    "contract_value": 409000,
+    "duration_months": 13,
+    "client_type": "Healthcare",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 008 — Logistics",
+    "summary": "Mobile application development for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 18%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2021,
+    "contract_value": 446000,
+    "duration_months": 14,
+    "client_type": "Financial Services",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 009 — IT",
+    "summary": "AI/ML proof of concept for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 19%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2022,
+    "contract_value": 483000,
+    "duration_months": 15,
+    "client_type": "Education",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 010 — Construction",
+    "summary": "Cloud migration and managed services for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 20%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2023,
+    "contract_value": 520000,
+    "duration_months": 16,
+    "client_type": "Government",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 011 — Logistics",
+    "summary": "Enterprise security platform deployment for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 21%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2024,
+    "contract_value": 557000,
+    "duration_months": 17,
+    "client_type": "Enterprise",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 012 — IT",
+    "summary": "Data analytics and BI modernization for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 22%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2019,
+    "contract_value": 594000,
+    "duration_months": 18,
+    "client_type": "Healthcare",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 013 — Construction",
+    "summary": "SSO and identity management implementation for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 23%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2020,
+    "contract_value": 631000,
+    "duration_months": 19,
+    "client_type": "Financial Services",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 014 — Logistics",
+    "summary": "Disaster recovery and BCP setup for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 24%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2021,
+    "contract_value": 668000,
+    "duration_months": 20,
+    "client_type": "Education",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 015 — IT",
+    "summary": "Custom software development for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 25%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2022,
+    "contract_value": 705000,
+    "duration_months": 21,
+    "client_type": "Government",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 016 — Construction",
+    "summary": "Network infrastructure upgrade for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 26%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2023,
+    "contract_value": 742000,
+    "duration_months": 22,
+    "client_type": "Enterprise",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 017 — Logistics",
+    "summary": "Compliance audit and remediation for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 27%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2024,
+    "contract_value": 779000,
+    "duration_months": 23,
+    "client_type": "Healthcare",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 018 — IT",
+    "summary": "Mobile application development for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 28%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2019,
+    "contract_value": 816000,
+    "duration_months": 24,
+    "client_type": "Financial Services",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 019 — Construction",
+    "summary": "AI/ML proof of concept for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 29%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2020,
+    "contract_value": 853000,
+    "duration_months": 25,
+    "client_type": "Education",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 020 — Logistics",
+    "summary": "Cloud migration and managed services for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 10%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2021,
+    "contract_value": 890000,
+    "duration_months": 26,
+    "client_type": "Government",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 021 — IT",
+    "summary": "Enterprise security platform deployment for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 11%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2022,
+    "contract_value": 927000,
+    "duration_months": 27,
+    "client_type": "Enterprise",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 022 — Construction",
+    "summary": "Data analytics and BI modernization for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 12%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2023,
+    "contract_value": 964000,
+    "duration_months": 28,
+    "client_type": "Healthcare",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 023 — Logistics",
+    "summary": "SSO and identity management implementation for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 13%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2024,
+    "contract_value": 1001000,
+    "duration_months": 29,
+    "client_type": "Financial Services",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 024 — IT",
+    "summary": "Disaster recovery and BCP setup for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 14%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2019,
+    "contract_value": 1038000,
+    "duration_months": 6,
+    "client_type": "Education",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 025 — Construction",
+    "summary": "Custom software development for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 15%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2020,
+    "contract_value": 1075000,
+    "duration_months": 7,
+    "client_type": "Government",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 026 — Logistics",
+    "summary": "Network infrastructure upgrade for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 16%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2021,
+    "contract_value": 1112000,
+    "duration_months": 8,
+    "client_type": "Enterprise",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 027 — IT",
+    "summary": "Compliance audit and remediation for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 17%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2022,
+    "contract_value": 1149000,
+    "duration_months": 9,
+    "client_type": "Healthcare",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 028 — Construction",
+    "summary": "Mobile application development for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 18%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2023,
+    "contract_value": 1186000,
+    "duration_months": 10,
+    "client_type": "Financial Services",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 029 — Logistics",
+    "summary": "AI/ML proof of concept for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 19%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2024,
+    "contract_value": 1223000,
+    "duration_months": 11,
+    "client_type": "Education",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 030 — IT",
+    "summary": "Cloud migration and managed services for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 20%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2019,
+    "contract_value": 1260000,
+    "duration_months": 12,
+    "client_type": "Government",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 031 — Construction",
+    "summary": "Enterprise security platform deployment for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 21%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2020,
+    "contract_value": 1297000,
+    "duration_months": 13,
+    "client_type": "Enterprise",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 032 — Logistics",
+    "summary": "Data analytics and BI modernization for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 22%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2021,
+    "contract_value": 1334000,
+    "duration_months": 14,
+    "client_type": "Healthcare",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 033 — IT",
+    "summary": "SSO and identity management implementation for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 23%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2022,
+    "contract_value": 1371000,
+    "duration_months": 15,
+    "client_type": "Financial Services",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 034 — Construction",
+    "summary": "Disaster recovery and BCP setup for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 24%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2023,
+    "contract_value": 1408000,
+    "duration_months": 16,
+    "client_type": "Education",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 035 — Logistics",
+    "summary": "Custom software development for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 25%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2024,
+    "contract_value": 1445000,
+    "duration_months": 17,
+    "client_type": "Government",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 036 — IT",
+    "summary": "Network infrastructure upgrade for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 26%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2019,
+    "contract_value": 1482000,
+    "duration_months": 18,
+    "client_type": "Enterprise",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 037 — Construction",
+    "summary": "Compliance audit and remediation for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 27%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2020,
+    "contract_value": 1519000,
+    "duration_months": 19,
+    "client_type": "Healthcare",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 038 — Logistics",
+    "summary": "Mobile application development for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 28%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2021,
+    "contract_value": 1556000,
+    "duration_months": 20,
+    "client_type": "Financial Services",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 039 — IT",
+    "summary": "AI/ML proof of concept for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 29%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2022,
+    "contract_value": 1593000,
+    "duration_months": 21,
+    "client_type": "Education",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 040 — Construction",
+    "summary": "Cloud migration and managed services for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 10%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2023,
+    "contract_value": 1630000,
+    "duration_months": 22,
+    "client_type": "Government",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 041 — Logistics",
+    "summary": "Enterprise security platform deployment for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 11%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2024,
+    "contract_value": 1667000,
+    "duration_months": 23,
+    "client_type": "Enterprise",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 042 — IT",
+    "summary": "Data analytics and BI modernization for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 12%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2019,
+    "contract_value": 1704000,
+    "duration_months": 24,
+    "client_type": "Healthcare",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 043 — Construction",
+    "summary": "SSO and identity management implementation for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 13%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2020,
+    "contract_value": 1741000,
+    "duration_months": 25,
+    "client_type": "Financial Services",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 044 — Logistics",
+    "summary": "Disaster recovery and BCP setup for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 14%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2021,
+    "contract_value": 1778000,
+    "duration_months": 26,
+    "client_type": "Education",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 045 — IT",
+    "summary": "Custom software development for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 15%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2022,
+    "contract_value": 1815000,
+    "duration_months": 27,
+    "client_type": "Government",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 046 — Construction",
+    "summary": "Network infrastructure upgrade for Enterprise. Delivered on time with ISO 9001, CMMI Level 3 compliance. Key outcomes: reduced operational costs by 16%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "ISO 9001, CMMI Level 3",
+    "year_completed": 2023,
+    "contract_value": 1852000,
+    "duration_months": 28,
+    "client_type": "Enterprise",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 047 — Logistics",
+    "summary": "Compliance audit and remediation for Healthcare. Delivered on time with FedRAMP Moderate, SOC 2 compliance. Key outcomes: reduced operational costs by 17%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "FedRAMP Moderate, SOC 2",
+    "year_completed": 2024,
+    "contract_value": 1889000,
+    "duration_months": 29,
+    "client_type": "Healthcare",
+    "domain": "Logistics"
+  },
+  {
+    "project_name": "Project 048 — IT",
+    "summary": "Mobile application development for Financial Services. Delivered on time with HIPAA, HITRUST compliance. Key outcomes: reduced operational costs by 18%, improved SLA to 99.9%, and successful audit with zero findings.",
+    "certifications": "HIPAA, HITRUST",
+    "year_completed": 2019,
+    "contract_value": 1926000,
+    "duration_months": 6,
+    "client_type": "Financial Services",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Project 049 — Construction",
+    "summary": "AI/ML proof of concept for Education. Delivered on time with PCI DSS Level 1 compliance. Key outcomes: reduced operational costs by 19%, improved SLA to 99.8%, and successful audit with zero findings.",
+    "certifications": "PCI DSS Level 1",
+    "year_completed": 2020,
+    "contract_value": 1963000,
+    "duration_months": 7,
+    "client_type": "Education",
+    "domain": "Construction"
+  },
+  {
+    "project_name": "Project 050 — Logistics",
+    "summary": "Cloud migration and managed services for Government. Delivered on time with SOC 2 Type II, ISO 27001 compliance. Key outcomes: reduced operational costs by 20%, improved SLA to 99.7%, and successful audit with zero findings.",
+    "certifications": "SOC 2 Type II, ISO 27001",
+    "year_completed": 2021,
+    "contract_value": 2000000,
+    "duration_months": 8,
+    "client_type": "Government",
+    "domain": "Logistics"
+  }
+]

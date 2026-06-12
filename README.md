@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RFP Autopilot — AI-Powered Bid & Proposal Response Engine
 
-## Getting Started
+Full hackathon implementation for Procurement, Sourcing & Contract Management.
 
-First, run the development server:
+## Requirements coverage
+
+| Requirement | Implementation |
+|-------------|----------------|
+| LLM parsing & narrative generation | Gemini 2.5 Flash — requirement extraction, Q&A drafting |
+| RAG Capability Library | Gemini embeddings + Supabase pgvector |
+| NER | Deadlines, budgets, evaluation weights, compliance clauses |
+| Win probability scoring | 7-factor model incl. budget, history, competitors |
+| Per-RFP workspaces | `/workspaces` — isolated bid workspace per tender |
+| Compliance checklist | Pass/fail/partial per requirement |
+| GO/NO-GO decision | Auto recommendation with rationale |
+| Structured proposal export | Section-mapped Word document |
+| 50%+ effort reduction | Benchmark panel on each workspace |
+| Review/edit/approve | Workspace draft editor with approve → re-index |
+
+## Setup
+
+### 1. Install & configure
+
+```bash
+npm install
+cp .env.local.example .env.local
+# Fill in GEMINI_API_KEY, Supabase keys
+```
+
+### 2. Run database schema
+
+Execute **all** of `supabase/schema.sql` in Supabase SQL editor (includes workspaces, bid_history, taxonomy tables).
+
+### 3. Generate sample datasets
+
+```bash
+node scripts/generate-sample-datasets.mjs
+```
+
+### 4. Start app & seed data
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 → **Library** → click **Seed + index 50 capabilities**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo flow (judges)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Library** → Seed datasets (120 bids, 50 capabilities, 15 criteria)
+2. **Analyze** → Upload `sample-data/sample-rfp-it-services.txt`
+3. **Workspace opens** with:
+   - GO/NO-GO banner
+   - Win probability dashboard (7 criteria)
+   - NER entities
+   - Compliance checklist (pass/fail)
+   - Effort reduction benchmark (≥50%)
+4. Click **Generate Draft** → AI answers all requirements
+5. **Edit & Approve** responses → re-indexes into library
+6. **Export Proposal** → structured Word document
 
-## Learn More
+## Sample data
 
-To learn more about Next.js, take a look at the following resources:
+| File | Records |
+|------|---------|
+| `sample-data/bid-history.json` | 120 past bids |
+| `sample-data/capability-library.json` | 50 projects |
+| `sample-data/evaluation-taxonomy.json` | 15 criteria |
+| `sample-data/sample-rfp-it-services.txt` | IT RFP |
+| `sample-data/sample-rfp-construction.txt` | Construction RFQ |
+| `sample-data/sample-rfp-logistics.txt` | Logistics tender |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API routes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `POST /api/seed` — load hackathon datasets
+- `POST /api/analyze` — analyze RFP + create workspace
+- `GET /api/workspaces` — list workspaces
+- `GET /api/workspaces/[id]` — workspace detail
+- `POST /api/workspaces/[id]/draft` — generate full draft (SSE)
+- `POST /api/workspaces/[id]/export` — structured Word export
+- `PATCH /api/workspaces/[id]/responses` — edit/approve response
