@@ -1,6 +1,5 @@
 "use client";
 
-import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
@@ -14,24 +13,10 @@ export default function LoginForm() {
     authError ? "Sign-in failed. Please try again." : null
   );
 
-  const signInWithGoogle = async () => {
+  const signInWithGoogle = () => {
     setLoading(true);
     setError(null);
-
-    const supabase = createClient();
-    const siteUrl =
-      process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || window.location.origin;
-    const { error: oauthError } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${siteUrl}/auth/callback?next=${encodeURIComponent(next)}`,
-      },
-    });
-
-    if (oauthError) {
-      setError(oauthError.message);
-      setLoading(false);
-    }
+    window.location.href = `/auth/google?next=${encodeURIComponent(next)}`;
   };
 
   return (
