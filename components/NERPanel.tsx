@@ -2,6 +2,7 @@ import type { NERResult } from "@/lib/types";
 
 interface NERPanelProps {
   entities: NERResult;
+  hideEvaluationWeights?: boolean;
 }
 
 function EntitySection({
@@ -30,7 +31,7 @@ function EntitySection({
   );
 }
 
-export default function NERPanel({ entities }: NERPanelProps) {
+export default function NERPanel({ entities, hideEvaluationWeights }: NERPanelProps) {
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       <EntitySection title="Deadlines" count={entities.deadlines.length}>
@@ -41,42 +42,56 @@ export default function NERPanel({ entities }: NERPanelProps) {
               {d.date && (
                 <span className="ml-2 text-xs text-indigo-600">{d.date}</span>
               )}
-              <p className="mt-0.5 text-xs text-slate-500 line-clamp-2">
+              <blockquote className="mt-0.5 border-l-2 border-slate-200 pl-2 text-xs leading-relaxed text-slate-500">
                 {d.context}
-              </p>
+              </blockquote>
             </li>
           ))}
         </ul>
       </EntitySection>
 
-      <EntitySection title="Budget figures" count={entities.budgets.length}>
-        <ul className="space-y-2">
+      <EntitySection title="Budget & contract value" count={entities.budgets.length}>
+        <ul className="space-y-3">
           {entities.budgets.map((b, i) => (
             <li key={i} className="text-sm">
               <span className="font-medium text-emerald-700">{b.text}</span>
-              <p className="mt-0.5 text-xs text-slate-500 line-clamp-2">
-                {b.context}
-              </p>
+              {b.amount && b.amount !== b.text && (
+                <span className="ml-2 text-xs text-emerald-600">{b.amount}</span>
+              )}
+              {b.context && (
+                <blockquote className="mt-1 border-l-2 border-slate-200 pl-2 text-xs leading-relaxed text-slate-500">
+                  {b.context}
+                </blockquote>
+              )}
             </li>
           ))}
         </ul>
       </EntitySection>
 
+      {!hideEvaluationWeights && (
       <EntitySection
         title="Evaluation weights"
         count={entities.evaluationWeights.length}
       >
         <ul className="space-y-2">
           {entities.evaluationWeights.map((w, i) => (
-            <li key={i} className="flex items-center justify-between text-sm">
-              <span className="text-slate-800">{w.criterion}</span>
-              <span className="rounded bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-                {w.weight}
-              </span>
+            <li key={i} className="text-sm">
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-slate-800">{w.criterion}</span>
+                <span className="shrink-0 rounded bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">
+                  {w.weight}
+                </span>
+              </div>
+              {w.context && (
+                <p className="mt-1 text-xs italic leading-relaxed text-slate-500 line-clamp-3">
+                  &ldquo;{w.context}&rdquo;
+                </p>
+              )}
             </li>
           ))}
         </ul>
       </EntitySection>
+      )}
 
       <EntitySection
         title="Compliance clauses"
@@ -88,9 +103,9 @@ export default function NERPanel({ entities }: NERPanelProps) {
               <span className="rounded bg-purple-50 px-2 py-0.5 text-xs font-semibold text-purple-700">
                 {c.type}
               </span>
-              <p className="mt-1 text-xs text-slate-500 line-clamp-2">
+              <blockquote className="mt-1 border-l-2 border-slate-200 pl-2 text-xs leading-relaxed text-slate-500">
                 {c.context}
-              </p>
+              </blockquote>
             </li>
           ))}
         </ul>

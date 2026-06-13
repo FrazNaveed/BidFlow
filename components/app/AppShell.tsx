@@ -53,15 +53,6 @@ const nav = [
       </svg>
     ),
   },
-  {
-    href: "/app/bulk",
-    label: "Bulk processing",
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zM9 11h6M9 15h4" />
-      </svg>
-    ),
-  },
 ];
 
 function isActive(pathname: string, href: string, exact?: boolean) {

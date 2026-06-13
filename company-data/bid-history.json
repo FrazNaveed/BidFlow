@@ -1,0 +1,134 @@
+[
+  {
+    "bid_id": "MER-2022-001",
+    "domain": "IT Services",
+    "sector": "Public Sector",
+    "outcome": "win",
+    "evaluation_score": 88,
+    "contract_value": 18500000,
+    "our_bid_value": 17200000,
+    "competitor_count": 4,
+    "year": 2022
+  },
+  {
+    "bid_id": "MER-2022-002",
+    "domain": "IT Services",
+    "sector": "Healthcare",
+    "outcome": "loss",
+    "evaluation_score": 71,
+    "contract_value": 9200000,
+    "our_bid_value": 8900000,
+    "competitor_count": 6,
+    "year": 2022
+  },
+  {
+    "bid_id": "MER-2023-001",
+    "domain": "IT Services",
+    "sector": "Public Sector",
+    "outcome": "win",
+    "evaluation_score": 92,
+    "contract_value": 22500000,
+    "our_bid_value": 21800000,
+    "competitor_count": 3,
+    "year": 2023
+  },
+  {
+    "bid_id": "MER-2023-002",
+    "domain": "Advisory",
+    "sector": "Financial Services",
+    "outcome": "win",
+    "evaluation_score": 84,
+    "contract_value": 5600000,
+    "our_bid_value": 5400000,
+    "competitor_count": 5,
+    "year": 2023
+  },
+  {
+    "bid_id": "MER-2023-003",
+    "domain": "Logistics",
+    "sector": "Transport",
+    "outcome": "loss",
+    "evaluation_score": 68,
+    "contract_value": 14000000,
+    "our_bid_value": 13200000,
+    "competitor_count": 7,
+    "year": 2023
+  },
+  {
+    "bid_id": "MER-2024-001",
+    "domain": "Logistics",
+    "sector": "Transport",
+    "outcome": "win",
+    "evaluation_score": 86,
+    "contract_value": 14200000,
+    "our_bid_value": 13900000,
+    "competitor_count": 4,
+    "year": 2024
+  },
+  {
+    "bid_id": "MER-2024-002",
+    "domain": "Advisory",
+    "sector": "Development Finance",
+    "outcome": "win",
+    "evaluation_score": 90,
+    "contract_value": 4800000,
+    "our_bid_value": 4700000,
+    "competitor_count": 8,
+    "year": 2024
+  },
+  {
+    "bid_id": "MER-2024-003",
+    "domain": "IT Services",
+    "sector": "Education",
+    "outcome": "loss",
+    "evaluation_score": 74,
+    "contract_value": 11000000,
+    "our_bid_value": 10500000,
+    "competitor_count": 5,
+    "year": 2024
+  },
+  {
+    "bid_id": "MER-2024-004",
+    "domain": "Advisory",
+    "sector": "Incubators",
+    "outcome": "win",
+    "evaluation_score": 91,
+    "contract_value": 6200000,
+    "our_bid_value": 6000000,
+    "competitor_count": 6,
+    "year": 2024
+  },
+  {
+    "bid_id": "MER-2025-001",
+    "domain": "Advisory",
+    "sector": "Incubators",
+    "outcome": "win",
+    "evaluation_score": 87,
+    "contract_value": 8400000,
+    "our_bid_value": 8200000,
+    "competitor_count": 5,
+    "year": 2025
+  },
+  {
+    "bid_id": "MER-2025-002",
+    "domain": "IT Services",
+    "sector": "Public Sector",
+    "outcome": "review",
+    "evaluation_score": 79,
+    "contract_value": 31000000,
+    "our_bid_value": 29500000,
+    "competitor_count": 4,
+    "year": 2025
+  },
+  {
+    "bid_id": "MER-2025-003",
+    "domain": "Logistics",
+    "sector": "Retail Supply Chain",
+    "outcome": "loss",
+    "evaluation_score": 72,
+    "contract_value": 9800000,
+    "our_bid_value": 9100000,
+    "competitor_count": 9,
+    "year": 2025
+  }
+]

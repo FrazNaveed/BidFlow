@@ -1,0 +1,43 @@
+MERIDIAN ADVISORY & TECHNOLOGY — SERVICES & CAPABILITIES
+
+1. Business Planning & Economic Advisory
+   • Detailed business plans for startups, SMEs, and incubator programs
+   • Market sizing, competitive analysis, and 5-year financial projections
+   • Investment memoranda and donor/grant application support
+   • Monitoring frameworks and KPI dashboards for fund managers
+
+2. Feasibility & Due Diligence
+   • Technical and financial feasibility for infrastructure and services projects
+   • Operational readiness assessments
+   • Cost-benefit and sensitivity analysis (Excel models with audit trails)
+
+3. Enterprise Software & Integration
+   • Custom web applications (React, Node.js, PostgreSQL)
+   • API integration between ERP, CRM, and document management systems
+   • Workflow automation and e-signature pipelines
+   • Legacy modernization (on-prem to cloud-hybrid)
+
+4. Data & Analytics
+   • BI dashboards (Power BI, Metabase)
+   • Data warehouse design and ETL pipelines
+   • Procurement analytics and spend visibility for sourcing teams
+
+5. Program & PMO Services
+   • End-to-end RFP support: requirement analysis, compliance matrices, proposal assembly
+   • PMO setup, RAID logs, stage-gate reviews
+   • Change management and training for 50–500 user rollouts
+
+Delivery methodology (Meridian Delivery Framework — MDF)
+Discover → Design → Deliver → Transition. All engagements include: signed scope, weekly status, risk register, UAT sign-off, and 90-day hypercare.
+
+Certifications & standards
+• ISO 9001:2015 — quality management (implementation complete; external audit scheduled Q4 2026)
+• ISO 27001:2022 — information security (ISMS documented; Stage 1 audit passed Feb 2026)
+• CMMI-DEV maturity level 3 — internal appraisal completed 2025
+• Team members hold PMP, AWS Solutions Architect Associate, and Microsoft Azure Administrator certifications
+
+Sectors served
+Public sector, development finance, healthcare, logistics, financial services, and incubators/accelerators.
+
+Typical contract sizes
+PKR 2M – PKR 45M | Duration 2–18 months

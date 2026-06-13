@@ -1,0 +1,33 @@
+CASE STUDY — Provincial E-Procurement Portal Enhancement
+
+Client: Provincial government agency (Sindh — name available under NDA)
+Sector: Public sector / digital governance
+Contract value: PKR 22.5 million
+Duration: 11 months (2023–2024)
+Outcome: Successful go-live; 99.7% uptime in first 6 months post-launch
+
+Scope
+Enhance existing e-procurement portal: vendor registration, tender publishing, bid submission workflow, evaluation committee module, and integration with existing financial management system (FMS). Required compliance with government data hosting guidelines and accessibility standards.
+
+Meridian approach
+• Requirements traceability matrix (RTM) mapped 847 RFP clauses to design and test cases
+• Agile sprints with fortnightly demos to procurement directorate
+• Security: OWASP Top 10 remediation, penetration test by third party, role-based access control
+• Hybrid hosting: application tier on approved cloud; database on-premises as mandated
+
+Key deliverables
+• Enhanced portal (React front-end, Node.js API, PostgreSQL)
+• FMS integration via REST APIs (vendor master, PO creation)
+• Admin training for 45 procurement officers (3 cohorts)
+• Operations runbook and SLA monitoring dashboard
+
+Results
+• Tender cycle time reduced from average 74 days to 41 days (directorate metrics)
+• 100% of mandatory compliance clauses verified at UAT
+• Evaluation score on contract performance review: 92/100
+
+Certifications applied
+ISO 27001 controls for access management and encryption at rest; ISO 9001 documented change control.
+
+Relevance
+IT services, public procurement, integration, security, training, and SLA-backed support tenders.

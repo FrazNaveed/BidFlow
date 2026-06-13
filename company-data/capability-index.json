@@ -1,0 +1,32 @@
+[
+  {
+    "project_name": "Karandaz Incubator Business Plans",
+    "summary": "Twelve investor-ready business plans for incubated ventures. Financial modeling, bilingual deliverables, 100% first-pass acceptance.",
+    "certifications": "ISO 9001 alignment, ISO 27001 ISMS",
+    "year_completed": 2025,
+    "contract_value": 8400000,
+    "duration_months": 6,
+    "client_type": "Development / Incubator",
+    "domain": "Advisory"
+  },
+  {
+    "project_name": "Provincial E-Procurement Portal Enhancement",
+    "summary": "Portal modernization with FMS integration, security hardening, and procurement officer training. 99.7% uptime post go-live.",
+    "certifications": "ISO 27001, ISO 9001, OWASP remediation",
+    "year_completed": 2024,
+    "contract_value": 22500000,
+    "duration_months": 11,
+    "client_type": "Provincial Government",
+    "domain": "IT Services"
+  },
+  {
+    "project_name": "Fleet Analytics & Route Optimization",
+    "summary": "Telematics and ERP integration with Power BI dashboards. 11% reduction in empty-mile runs for national logistics operator.",
+    "certifications": "Azure hosting, ISO 27001 controls",
+    "year_completed": 2024,
+    "contract_value": 14200000,
+    "duration_months": 8,
+    "client_type": "Logistics Operator",
+    "domain": "Logistics"
+  }
+]

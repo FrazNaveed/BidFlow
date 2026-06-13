@@ -20,6 +20,7 @@ export async function POST(request: NextRequest) {
         evaluationTaxonomy: results.evaluationTaxonomy,
         capabilityRecords: results.capabilityRecords,
         capabilityChunks: results.capabilityChunks,
+        companyDocuments: results.companyDocuments,
       },
     });
   } catch (err) {

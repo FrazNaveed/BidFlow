@@ -31,7 +31,7 @@ Extract:
    - priority: high (mandatory/shall/must), medium (should), low (nice-to-have)
    - sectionType: "question" (explicit Q&A), "narrative" (descriptive section to write), or "compliance" (certification/regulatory)
    - sectionTitle: parent section name if identifiable
-4. evaluationCriteria — scoring criteria with weights from the document
+4. evaluationCriteria — scoring criteria with weights from the document. For each, include a short description of what it means and sourceQuote: a verbatim sentence or phrase copied from the document.
 
 DOCUMENT:
 ${truncated}
@@ -41,7 +41,7 @@ Return JSON:
   "summary": string,
   "domain": string,
   "requirements": [{ "id": string, "text": string, "category": string, "priority": "high"|"medium"|"low", "sectionType": "question"|"narrative"|"compliance", "sectionTitle": string }],
-  "evaluationCriteria": [{ "criterion": string, "weight": string, "description": string }]
+  "evaluationCriteria": [{ "criterion": string, "weight": string, "description": string, "sourceQuote": string }]
 }`);
 
   const requirements = (result.requirements || [])

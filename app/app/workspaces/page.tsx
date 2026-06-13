@@ -73,11 +73,6 @@ export default function WorkspacesPage() {
                   Win probability: <strong>{ws.win_score.overall}%</strong>
                 </p>
               )}
-              {ws.effort_reduction_pct != null && (
-                <p className="mt-1 text-xs text-emerald-600">
-                  {ws.effort_reduction_pct}% effort reduction
-                </p>
-              )}
               <p className="mt-3 text-xs text-slate-400">
                 {new Date(ws.created_at).toLocaleDateString()}
               </p>

@@ -4,14 +4,14 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import ComplianceChecklist from "@/components/ComplianceChecklist";
+import EvaluationCriteriaPanel from "@/components/EvaluationCriteriaPanel";
 import { mandatoryPassRate } from "@/lib/mandatory-pass-rate";
-import EffortBenchmark from "@/components/EffortBenchmark";
 import GoNoGoBanner from "@/components/GoNoGoBanner";
 import NERPanel from "@/components/NERPanel";
 import WinScoreDashboard from "@/components/WinScoreDashboard";
 import type {
   ComplianceChecklistItem,
-  EffortBenchmark as EffortBenchmarkType,
+  EvaluationCriterion,
   GoNoGoResult,
   NERResult,
   Workspace,
@@ -113,6 +113,8 @@ export default function WorkspaceDetailPage() {
   const winScore = workspace.win_score as WinScoreResult | null;
   const checklist = (workspace.compliance_checklist || []) as ComplianceChecklistItem[];
   const entities = workspace.entities as NERResult | null;
+  const evaluationCriteria = (workspace.evaluation_criteria ||
+    []) as EvaluationCriterion[];
   const goNoGo: GoNoGoResult | null = workspace.go_no_go
     ? {
         decision: workspace.go_no_go,
@@ -126,17 +128,6 @@ export default function WorkspaceDetailPage() {
         },
       }
     : null;
-
-  const effort: EffortBenchmarkType | null =
-    workspace.effort_baseline_minutes != null
-      ? {
-          baselineMinutes: workspace.effort_baseline_minutes,
-          aiMinutes: workspace.effort_ai_minutes || 0,
-          reductionPct: Number(workspace.effort_reduction_pct) || 0,
-          baselineLabel: `~${Math.floor(workspace.effort_baseline_minutes / 60)}h ${workspace.effort_baseline_minutes % 60}m manual`,
-          aiLabel: `~${workspace.effort_ai_minutes}m with AI`,
-        }
-      : null;
 
   return (
     <div className="space-y-8">
@@ -177,18 +168,23 @@ export default function WorkspaceDetailPage() {
         </div>
       )}
 
-      {effort && <EffortBenchmark effort={effort} />}
-
       {winScore && (
         <div className="rounded-xl border border-slate-200 bg-white p-6">
           <WinScoreDashboard winScore={winScore} />
         </div>
       )}
 
+      {(evaluationCriteria.length > 0 || (entities?.evaluationWeights?.length ?? 0) > 0) && (
+        <EvaluationCriteriaPanel
+          evaluationCriteria={evaluationCriteria}
+          entities={entities}
+        />
+      )}
+
       {entities && (
         <div>
           <h2 className="mb-4 text-lg font-semibold text-slate-900">Extracted entities</h2>
-          <NERPanel entities={entities} />
+          <NERPanel entities={entities} hideEvaluationWeights />
         </div>
       )}
 

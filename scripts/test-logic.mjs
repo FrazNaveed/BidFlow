@@ -62,14 +62,6 @@ function determineGoNoGo(winScore, checklist) {
   return { decision: "REVIEW" };
 }
 
-function calculateEffortBenchmark(requirementCount, pageEstimate = 0) {
-  const pages = pageEstimate || Math.max(1, Math.ceil(requirementCount * 1.5));
-  const baselineMinutes = Math.round(45 + pages * 2 + requirementCount * 8);
-  const aiMinutes = Math.round(3 + requirementCount * 0.5);
-  const reductionPct = Math.round(((baselineMinutes - aiMinutes) / baselineMinutes) * 100);
-  return { baselineMinutes, aiMinutes, reductionPct };
-}
-
 // ── Tests ──
 
 console.log("\n── Compliance Checklist Logic ──");
@@ -129,29 +121,23 @@ test("weak bid returns NO-GO", () => {
   assert.strictEqual(result.decision, "NO-GO");
 });
 
-console.log("\n── Effort Benchmark ──");
-test("meets 50%+ reduction for typical RFP (10+ requirements)", () => {
-  for (const count of [10, 20, 50]) {
-    const e = calculateEffortBenchmark(count);
-    assert.ok(e.reductionPct >= 50, `expected ≥50% for ${count} reqs, got ${e.reductionPct}%`);
-  }
+console.log("\n── Company Library Integrity ──");
+test("company bid history has win/loss records", () => {
+  const data = JSON.parse(fs.readFileSync(path.join(ROOT, "company-data/bid-history.json"), "utf8"));
+  assert.ok(data.length >= 10);
+  assert.ok("outcome" in data[0]);
 });
 
-test("AI time is less than manual baseline", () => {
-  const e = calculateEffortBenchmark(25);
-  assert.ok(e.aiMinutes < e.baselineMinutes);
+test("capability index matches case studies", () => {
+  const data = JSON.parse(fs.readFileSync(path.join(ROOT, "company-data/capability-index.json"), "utf8"));
+  assert.strictEqual(data.length, 3);
 });
 
-console.log("\n── Sample Dataset Integrity ──");
-test("bid history has 120 rows with win/loss fields", () => {
-  const data = JSON.parse(fs.readFileSync(path.join(ROOT, "sample-data/bid-history.json"), "utf8"));
-  assert.strictEqual(data.length, 120);
-  assert.ok("outcome" in data[0] || "result" in data[0] || "won" in data[0]);
-});
-
-test("capability library has 50 records", () => {
-  const data = JSON.parse(fs.readFileSync(path.join(ROOT, "sample-data/capability-library.json"), "utf8"));
-  assert.strictEqual(data.length, 50);
+test("company library has profile and case study documents", () => {
+  const dir = path.join(ROOT, "company-data");
+  const docs = fs.readdirSync(dir).filter((f) => f.endsWith(".txt"));
+  assert.ok(docs.length >= 7);
+  assert.ok(docs.some((f) => f.includes("company-profile")));
 });
 
 test("evaluation taxonomy has 15+ entries", () => {
@@ -177,8 +163,7 @@ const featureChecks = [
   ["components/ComplianceChecklist.tsx", "Compliance checklist UI"],
   ["components/GoNoGoBanner.tsx", "GO/NO-GO banner UI"],
   ["components/NERPanel.tsx", "NER output UI"],
-  ["components/EffortBenchmark.tsx", "Effort reduction UI"],
-  ["app/workspaces/[id]/page.tsx", "Per-RFP workspace UI"],
+  ["app/app/workspaces/[id]/page.tsx", "Per-RFP workspace UI"],
   ["app/api/analyze/route.ts", "RFP analyze endpoint"],
   ["app/api/workspaces/[id]/draft/route.ts", "Draft generation endpoint"],
   ["app/api/workspaces/[id]/export/route.ts", "Proposal export endpoint"],

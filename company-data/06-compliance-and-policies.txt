@@ -1,0 +1,34 @@
+MERIDIAN ADVISORY & TECHNOLOGY — COMPLIANCE, QUALITY & INFORMATION SECURITY
+
+Quality Management (ISO 9001:2015 alignment)
+Meridian maintains a documented Quality Management System covering proposal development, project delivery, and client feedback. All projects use: signed charter, requirements baseline, design review minutes, UAT sign-off, and lessons-learned workshop. Internal quality audits conducted quarterly.
+
+Information Security (ISO 27001:2022 alignment)
+• ISMS scope: all client data, proposal repositories, and production systems
+• Encryption: TLS 1.2+ in transit; AES-256 for sensitive document storage
+• Access control: SSO with MFA for staff; least-privilege role matrix
+• Backup: daily encrypted backups, 30-day retention, tested restore quarterly
+• Incident response plan with 4-hour notification SLA for data breaches affecting client data
+• Sub-processors: Supabase (US/EU), Azure (UAE North) — DPAs executed
+
+Health, Safety & Environment
+Office-based services firm; HSE policy covers site visits and client premises work. No major HSE incidents in the last 5 years.
+
+Anti-bribery & ethics
+Meridian Code of Conduct prohibits facilitation payments and undisclosed agents. All bid submissions declare actual and potential conflicts of interest.
+
+Data protection
+Personal data processed only for contracted purposes. Client documents segregated by project workspace. Staff bound by NDAs. Right-to-erasure supported on contract termination per client instruction.
+
+Litigation & debarment
+No pending litigation material to financial standing. Not debarred by any government entity in Pakistan or internationally.
+
+Insurance
+Professional indemnity: PKR 50M | Public liability: PKR 10M | Cyber liability: PKR 25M (coverage certificates attachable to bids)
+
+Standard compliance declarations available
+• Non-blacklisting certificate
+• Tax compliance certificate
+• SECP good standing
+• Audited accounts (3 years)
+• ISO audit reports (Stage 1 ISMS)

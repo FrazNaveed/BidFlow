@@ -1,6 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { buildComplianceChecklist } from "./compliance-checklist";
-import { calculateEffortBenchmark } from "./effort-benchmark";
 import { extractRequirements } from "./extract-requirements";
 import { determineGoNoGo } from "./go-no-go";
 import { extractEntities } from "./ner";
@@ -25,7 +24,6 @@ export async function analyzeRfpText(
     winScore.requirementScores
   );
   const goNoGo = determineGoNoGo(winScore, complianceChecklist);
-  const effort = calculateEffortBenchmark(requirements.length);
 
   return {
     filename,
@@ -37,6 +35,5 @@ export async function analyzeRfpText(
     complianceChecklist,
     winScore,
     goNoGo,
-    effort,
   };
 }

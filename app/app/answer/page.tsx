@@ -23,6 +23,20 @@ interface QAItem {
   winScore?: WinScoreResult;
 }
 
+function decodeHeaderJson<T>(header: string | null, encoding: string | null): T | null {
+  if (!header) return null;
+  try {
+    if (encoding === "base64") {
+      const binary = atob(header);
+      const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+      return JSON.parse(new TextDecoder().decode(bytes)) as T;
+    }
+    return JSON.parse(header) as T;
+  } catch {
+    return null;
+  }
+}
+
 export default function AnswerPage() {
   const [question, setQuestion] = useState("");
   const [loading, setLoading] = useState(false);
@@ -70,12 +84,11 @@ export default function AnswerPage() {
       const sourcesHeader = res.headers.get("X-Sources");
       const trustScore = parseFloat(res.headers.get("X-Trust-Score") || "0");
       const winScoreHeader = res.headers.get("X-Win-Score");
-      const sources: Source[] = sourcesHeader
-        ? JSON.parse(sourcesHeader)
-        : [];
-      const winScore: WinScoreResult | undefined = winScoreHeader
-        ? JSON.parse(winScoreHeader)
-        : undefined;
+      const sources: Source[] =
+        decodeHeaderJson<Source[]>(sourcesHeader, res.headers.get("X-Sources-Encoding")) ?? [];
+      const winScore: WinScoreResult | undefined =
+        decodeHeaderJson<WinScoreResult>(winScoreHeader, res.headers.get("X-Win-Score-Encoding")) ??
+        undefined;
 
       if (contentType.includes("application/json")) {
         const data = await res.json();

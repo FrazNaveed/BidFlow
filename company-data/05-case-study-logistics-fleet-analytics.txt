@@ -1,0 +1,33 @@
+CASE STUDY — Fleet Analytics & Route Optimization Platform
+
+Client: National logistics operator (500+ vehicles)
+Sector: Logistics / transport
+Contract value: PKR 14.2 million
+Duration: 8 months (2024)
+Outcome: 11% reduction in empty-mile runs; contract extended for Phase 2
+
+Scope
+Design and deploy a fleet analytics platform ingesting GPS telematics, fuel card data, and ERP dispatch records. Provide real-time dashboards, route deviation alerts, and monthly performance reports for operations leadership.
+
+Meridian approach
+• Data pipeline: nightly ETL from telematics API and on-prem SQL Server ERP
+• Power BI dashboards for dispatch, fuel efficiency, and driver scorecards
+• Mobile-friendly exception alerts for hub managers
+• 4-week parallel run before decommissioning legacy Excel reporting
+
+Key deliverables
+• Cloud data lake (Azure) with documented schema
+• 12 standard reports + 3 executive dashboards
+• User acceptance testing with 20 dispatch supervisors
+• 6-month post-go-live support included
+
+Results
+• Empty-mile percentage: 23% → 12% within 4 months of go-live
+• Reporting cycle: 5 days manual → same-day automated
+• Client provided written reference (Ref: LOG/FA/2024/09)
+
+Team
+Project Manager (PMP), 2 data engineers, 1 BI developer, 1 QA analyst — all CVs available in personnel file.
+
+Relevance
+Logistics tenders, data analytics, cloud platforms, ERP integration, and measurable operational KPIs.

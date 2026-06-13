@@ -73,9 +73,6 @@ export async function POST(request: NextRequest) {
       winScore: analysis.winScore,
       complianceChecklist: analysis.complianceChecklist,
       goNoGo: analysis.goNoGo,
-      effortBaselineMinutes: analysis.effort.baselineMinutes,
-      effortAiMinutes: analysis.effort.aiMinutes,
-      effortReductionPct: analysis.effort.reductionPct,
     });
 
     return NextResponse.json({

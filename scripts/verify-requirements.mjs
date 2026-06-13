@@ -43,10 +43,11 @@ async function api(method, route, { body, headers } = {}) {
 }
 
 function checkSampleDatasets() {
-  console.log("\n── Sample Datasets ──");
+  console.log("\n── Company & Sample Data ──");
   const checks = [
-    ["sample-data/bid-history.json", 120, "bid history"],
-    ["sample-data/capability-library.json", 50, "capability library"],
+    ["company-data/bid-history.json", 10, "company bid history"],
+    ["company-data/capability-index.json", 3, "project index"],
+    ["company-data/01-company-profile.txt", 0, "company profile doc"],
     ["sample-data/evaluation-taxonomy.json", 15, "evaluation taxonomy"],
     ["sample-data/sample-rfp-it-services.txt", 1, "IT services RFP"],
     ["sample-data/sample-rfp-construction.txt", 1, "construction RFP"],
@@ -70,6 +71,12 @@ function checkSampleDatasets() {
       else fail("DS", `${label}`, `file too small (${size} bytes)`);
     }
   }
+
+  const companyDocs = fs
+    .readdirSync(path.join(ROOT, "company-data"))
+    .filter((f) => f.endsWith(".txt"));
+  if (companyDocs.length >= 5) pass("DS", "company library documents", `${companyDocs.length} .txt files`);
+  else fail("DS", "company library documents", `expected ≥5, got ${companyDocs.length}`);
 }
 
 async function ensureSeeded() {
@@ -156,12 +163,6 @@ async function testAnalyzeAndWorkspace() {
     pass("GNG", "GO/NO-GO decision", `${a.goNoGo.decision}: ${a.goNoGo.rationale.slice(0, 60)}…`);
   else fail("GNG", "GO/NO-GO decision", "missing");
 
-  if (a.effort?.reductionPct >= 50)
-    pass("EFF", "50%+ effort reduction", `${a.effort.reductionPct}% (${a.effort.baselineMinutes}m → ${a.effort.aiMinutes}m)`);
-  else if (a.effort?.reductionPct != null)
-    fail("EFF", "50%+ effort reduction", `only ${a.effort.reductionPct}%`);
-  else fail("EFF", "50%+ effort reduction", "missing effort benchmark");
-
   return workspaceId;
 }
 
@@ -175,7 +176,7 @@ async function testWorkspaceDetail(workspaceId) {
   const { workspace, responses } = res.data;
   pass("WS", "Workspace persisted", workspace.name);
 
-  const fields = ["win_score", "compliance_checklist", "entities", "go_no_go", "effort_reduction_pct"];
+  const fields = ["win_score", "compliance_checklist", "entities", "go_no_go"];
   for (const f of fields) {
     if (workspace[f] != null) pass("WS", `Workspace has ${f}`, "present");
     else fail("WS", `Workspace has ${f}`, "missing");

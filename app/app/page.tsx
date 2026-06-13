@@ -60,12 +60,6 @@ export default function DashboardPage() {
       href: "/app/library",
       primary: false,
     },
-    {
-      title: "Bulk answer questions",
-      body: "Process spreadsheets or document batches for high-volume tenders.",
-      href: "/app/bulk",
-      primary: false,
-    },
   ];
 
   return (

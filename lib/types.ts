@@ -42,6 +42,7 @@ export interface EvaluationCriterion {
   criterion: string;
   weight: string;
   description?: string;
+  sourceQuote?: string;
   taxonomyMatch?: string;
 }
 
@@ -96,14 +97,6 @@ export interface GoNoGoResult {
   };
 }
 
-export interface EffortBenchmark {
-  baselineMinutes: number;
-  aiMinutes: number;
-  reductionPct: number;
-  baselineLabel: string;
-  aiLabel: string;
-}
-
 export interface RFPAnalysisResult {
   workspaceId?: string;
   filename?: string;
@@ -115,7 +108,6 @@ export interface RFPAnalysisResult {
   complianceChecklist: ComplianceChecklistItem[];
   winScore: WinScoreResult;
   goNoGo: GoNoGoResult;
-  effort: EffortBenchmark;
 }
 
 export interface Workspace {

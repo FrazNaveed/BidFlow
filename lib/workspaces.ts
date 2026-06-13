@@ -24,9 +24,6 @@ export async function createWorkspace(
     winScore?: WinScoreResult;
     complianceChecklist?: ComplianceChecklistItem[];
     goNoGo?: GoNoGoResult;
-    effortBaselineMinutes?: number;
-    effortAiMinutes?: number;
-    effortReductionPct?: number;
   }
 ): Promise<Workspace> {
   const { data: row, error } = await supabase
@@ -44,9 +41,6 @@ export async function createWorkspace(
       compliance_checklist: data.complianceChecklist,
       go_no_go: data.goNoGo?.decision,
       go_no_go_rationale: data.goNoGo?.rationale,
-      effort_baseline_minutes: data.effortBaselineMinutes,
-      effort_ai_minutes: data.effortAiMinutes,
-      effort_reduction_pct: data.effortReductionPct,
       status:
         data.goNoGo?.decision === "GO"
           ? "go"

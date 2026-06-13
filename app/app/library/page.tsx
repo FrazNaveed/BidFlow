@@ -73,7 +73,9 @@ export default function HomePage() {
       }
       setMessage({
         type: "success",
-        text: `Seeded: ${data.seeded.bidHistory} bids, ${data.seeded.evaluationTaxonomy} criteria, ${data.seeded.capabilityRecords} capabilities${withChunks ? `, ${data.seeded.capabilityChunks} chunks` : ""}`,
+        text: withChunks
+          ? `Indexed company library: ${data.seeded.companyDocuments} documents → ${data.seeded.capabilityChunks} chunks, ${data.seeded.bidHistory} bid records`
+          : `Loaded ${data.seeded.bidHistory} bid records and ${data.seeded.capabilityRecords} project references (documents not indexed)`,
       });
       if (withChunks) await fetchDocuments();
     } finally {
@@ -106,9 +108,9 @@ export default function HomePage() {
       </div>
 
       <div className="rounded-xl border border-indigo-200 bg-indigo-50 p-5">
-        <h3 className="font-semibold text-indigo-900">Import sample data</h3>
+        <h3 className="font-semibold text-indigo-900">Index company library</h3>
         <p className="mt-1 text-sm text-indigo-700">
-          120 bid history records, 15 evaluation criteria, and 50 capability projects.
+          Loads <code className="rounded bg-white/80 px-1">company-data/</code> — profile, case studies, compliance docs, and 12 real bid records. Edit those files to match your company, then index.
         </p>
         <div className="mt-3 flex gap-2">
           <button
@@ -116,14 +118,14 @@ export default function HomePage() {
             disabled={seeding}
             className="rounded-lg border border-indigo-300 bg-white px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-100 disabled:opacity-50"
           >
-            Seed metadata
+            Load bid history only
           </button>
           <button
             onClick={() => handleSeed(true)}
             disabled={seeding}
             className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
           >
-            {seeding ? "Importing..." : "Import & index capabilities"}
+            {seeding ? "Indexing..." : "Index company library"}
           </button>
         </div>
       </div>
@@ -199,6 +201,11 @@ export default function HomePage() {
                   <span className="font-medium text-slate-800">
                     {doc.filename}
                   </span>
+                  {doc.filename.startsWith("company/") && (
+                    <span className="rounded-full bg-indigo-100 px-2 py-0.5 text-xs font-medium text-indigo-700">
+                      Company library
+                    </span>
+                  )}
                   {doc.filename === "approved_answers" && (
                     <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">
                       Approved

@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getApiAuth } from "@/lib/api-auth";
 import { generateAnswer, streamAnswer } from "@/lib/rag";
 
+function jsonHeader(value: unknown): string {
+  return Buffer.from(JSON.stringify(value), "utf8").toString("base64");
+}
+
 export async function POST(request: NextRequest) {
   try {
     const { auth, error } = await getApiAuth();
@@ -35,10 +39,12 @@ export async function POST(request: NextRequest) {
 
       const headers = new Headers({
         "Content-Type": "text/plain; charset=utf-8",
-        "X-Sources": JSON.stringify(response.result.sources),
+        "X-Sources": jsonHeader(response.result.sources),
+        "X-Sources-Encoding": "base64",
         "X-Trust-Score": String(response.result.trustScore),
         "X-Low-Confidence": "false",
-        "X-Win-Score": JSON.stringify(response.result.winScore ?? null),
+        "X-Win-Score": jsonHeader(response.result.winScore ?? null),
+        "X-Win-Score-Encoding": "base64",
       });
 
       return new Response(response.stream, { headers });
