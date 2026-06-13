@@ -33,14 +33,10 @@ export async function extractTextFromFile(
 }
 
 async function extractPdfText(buffer: Buffer): Promise<string> {
-  const { PDFParse } = await import("pdf-parse");
-  const parser = new PDFParse({ data: buffer });
-  try {
-    const result = await parser.getText();
-    return result.text || "";
-  } finally {
-    await parser.destroy();
-  }
+  const { extractText, getDocumentProxy } = await import("unpdf");
+  const pdf = await getDocumentProxy(new Uint8Array(buffer));
+  const { text } = await extractText(pdf, { mergePages: true });
+  return text || "";
 }
 
 async function extractDocxText(buffer: Buffer): Promise<string> {
